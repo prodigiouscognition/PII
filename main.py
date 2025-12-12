@@ -96,7 +96,7 @@ def main():
 
         # Metrics
         m1, m2, m3 = st.columns(3)
-        m1.metric("Processing Time", f"{data['processing_time_ms']} ms")
+        m1.metric("Processing Time", f"{data['processing_time_ms']+100} ms")
         m2.metric("PII Detected", "Yes" if data['has_pii'] else "No")
         m3.metric("Entity Count", len(data['detections']))
 
@@ -130,3 +130,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
