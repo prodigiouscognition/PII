@@ -394,7 +394,7 @@ class UnifiedPIIPipeline:
         ]
         self.matcher.add("MED_CONTEXT", [context_pattern])
 
-        self.age_extractor = FastAgeExtractor(threshold=0.30)
+        self.age_extractor = FastAgeExtractor(threshold=0.60)
         self.regex_detector = RegexPIIDetector()
 
     def _generate_token(self, pii_type, text_segment):
