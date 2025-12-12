@@ -4,9 +4,9 @@ from pii import UnifiedPIIPipeline
 
 # --- CONFIG & EXAMPLES ---
 EXAMPLES = [
+    "Write your own test case...",
     "Ich bin am 12.04.1985 geboren (also 40 Jahre alt) und benötige Insulin wegen Diabetes, hier ist mein Ausweis: L01X00T47.", 
-    "Erreichen Sie mich unter ojaswini@gmail.com oder besuchen Sie www.hamburg.de/service für Termine.", 
-    "Hier ist eine gültige IBAN für die Überweisung: DE43 2127 2486 1917 6073 77.", 
+    "Erreichen Sie mich unter ojaswini@gmail.com oder besuchen Sie www.hamburg.de/service für Termine.",
     "Ich bin am 12.04.2005 geboren und nehme Ibuprofen wegen Kopfschmerzen.",
     "Mein Opa ist 80 Jahre alt und braucht eine Operation.",
     "Keine Daten hier.",
@@ -130,4 +130,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
