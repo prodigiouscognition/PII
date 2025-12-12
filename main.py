@@ -4,23 +4,34 @@ from pii import UnifiedPIIPipeline
 
 # --- CONFIG & EXAMPLES ---
 EXAMPLES = [
-    "Write your own text...", # Default option
-    "Ich bin am 12.04.1985 geboren (also 40 Jahre alt) und benötige Insulin wegen Diabetes, hier ist mein Ausweis: L01X00T47.",
-    "Erreichen Sie mich unter ojaswini@gmail.com oder besuchen Sie www.hamburg.de/service für Termine.",
-    "Mein Büro in der Hauptstraße 15, 20095 Hamburg ist ab 9 Uhr unter 040-12345678 erreichbar.",
-    "Hier ist eine gültige IBAN für die Überweisung: DE43 2127 2486 1917 6073 77.",
-    "Bitte belasten Sie meine Karte 4929 1234 5678 9015.",
-    "Meine Glückszahl ist 1234 5678 1234 5671 und keine Kreditkarte.",
-    "Der Patient nimmt Aspirin wegen starker Migräne.",
-    "Morgen habe ich einen Termin für ein MRT und eine Blutabnahme.",
-    "Frau Müller hat den Vertrag unterschrieben.",
-    "Olaf Scholz und Robert Habeck waren heute in Berlin.",
-    "Dr. Weber und Anwalt Schmidt sind im Meeting.",
-    "Führerschein-Nr: B072R6U5359.",
-    "Meine Handynummer ist privat (kein Führerschein).",
-    "Steuer-ID: 12345678901.",
-    "Reisepassnummer: C01X00T47."
+    "Ich bin am 12.04.1985 geboren (also 40 Jahre alt) und benötige Insulin wegen Diabetes, hier ist mein Ausweis: L01X00T47.", 
+    "Erreichen Sie mich unter ojaswini@gmail.com oder besuchen Sie www.hamburg.de/service für Termine.", 
+    "Hier ist eine gültige IBAN für die Überweisung: DE43 2127 2486 1917 6073 77.", 
+    "Ich bin am 12.04.2005 geboren und nehme Ibuprofen wegen Kopfschmerzen.",
+    "Mein Opa ist 80 Jahre alt und braucht eine Operation.",
+    "Keine Daten hier.",
+    "Herr Müller wohnt in der Kölner Straße 44.", 
+    "Der Unfall war an der Berliner Allee 44, Hamburg Altona", 
+    "Die Wohnung ist in der Bodenseestraße 17.", 
+    "Mein Opa ist 80 Jahre alt und braucht eine Operation.", 
+    "Bitte rufen Sie mich morgen unter (030)123456 an.",
+    "Multiple TLD: example.de.com", 
+    "Compound TLD: site.co.uk",
+    "Standard TLD: google.de",
+    "Tax ID: 12345678901",
+    "Visa: 4929 1234 5678 9015",
+    "Phone: 0171 12345678",
+    "Steuer-ID Standard: 12345678901",
+    "Steuer-ID Embedded: Meine ID ist 12345678901 danke.",
+    "Visa: 4929 1234 5678 9015",
+    "URL: startup.ai",
+    "IBAN: DE89 3704 0044 0532 0130 00",
+    'example.de.com'
+    "+49 30 12345678",
+    'Frau Müller hat den Vertrag unterschrieben.', 
+    'Dr. Weber und Anwalt Schmidt sind im Meeting.'
 ]
+
 
 # --- CACHED RESOURCE LOADING ---
 @st.cache_resource
@@ -117,4 +128,5 @@ def main():
         st.warning("Please enter or select text to process.")
 
 if __name__ == "__main__":
+
     main()
